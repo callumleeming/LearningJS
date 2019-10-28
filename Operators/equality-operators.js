@@ -3,7 +3,7 @@
 let var1 = 5;
 let var2 = "5";
 
-//this condition is true because it coerce's the string to a number
+//this condition is true because it coerces the string to a number
 console.log("1" == 1); //output: true
 console.log("1" != 1); //output: false
 
