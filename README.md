@@ -1,5 +1,6 @@
 # LearningJS
-A how-to guide on the JavaScript language
+A how-to guide on the JavaScript language.
 
 I've added code comments along the way. However, I have probably missed a few!
 
+Run by using Quokka.js on VS Code. (Probably the fastest way) 😃
