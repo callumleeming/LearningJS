@@ -10,6 +10,7 @@ let pizzas = [
 
 pizzas.forEach(pizza => console.log(pizza)); //will log out data for each pizza
 pizzas.forEach((pizza, index) => console.log(pizza, index)); //will log out data for each pizza with its index
+
 let pepperoniPizzas = pizzas.filter(pizza => pizza.topping === "pepperoni");
 console.log(pepperoniPizzas); 
 // The above log prints:
@@ -18,3 +19,4 @@ console.log(pepperoniPizzas);
 //   { pizzaId: 231, topping: 'pepperoni' }, 
 //   { pizzaId: 221, topping: 'pepperoni' }
 //  ] 
+
