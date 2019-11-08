@@ -1,3 +1,5 @@
+//Constructor Functions
+
 function Vehicle(id) {
     this.vehicleId = id;
     this.start = function() {
