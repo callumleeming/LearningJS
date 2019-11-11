@@ -38,7 +38,15 @@ function convertToWords(number) {
         "Ninety",
     ];
     let tripleDigits = [
-        "One Hundred"
+        "One Hundred",
+        "Two Hundred",
+        "Three Hundred",
+        "Four Hundred",
+        "Five Hundred",
+        "Six Hundred",
+        "Seven Hundred",
+        "Eight Hundred",
+        "Nine Hundred"
     ];
 
     if (number == "0") {
@@ -66,9 +74,18 @@ function convertToWords(number) {
     }
     
     else if (length === 3) {
-        return tripleDigits[numbers[0] - 1]
+        let firstWord = tripleDigits[numbers[0]-1];
+        let secondWord = doubleDigits[numbers[1]-1] || '';
+        let thirdWord = singleDigits[numbers[2]-1] || '';
+
+        if(((numbers[1]) == 1) && ((numbers[2]) <= 9)) {
+            let v = (Number(numbers[1]) + Number(numbers[2])) - 2;
+            return `${firstWord} and ${teenDigits[v]}`;
+        }
+
+        return `${firstWord} and ${secondWord} ${thirdWord}`;
     }
 }
 
-console.log(convertToWords("87")); //Eighty Seven
+console.log(convertToWords("613")); //Six Hundred and Thirteen
 
