@@ -81,11 +81,14 @@ function convertToWords(number) {
         if(((numbers[1]) == 1) && ((numbers[2]) <= 9)) {
             let v = (Number(numbers[1]) + Number(numbers[2])) - 2;
             return `${firstWord} and ${teenDigits[v]}`;
+        } 
+        
+        else if (numbers[1] == 0 && numbers[2] == 0) {
+            return `${firstWord}`;
         }
 
         return `${firstWord} and ${secondWord} ${thirdWord}`;
     }
 }
 
-console.log(convertToWords("613")); //Six Hundred and Thirteen
-
+console.log(convertToWords("659")); //Six Hundred and Fifty Nine
