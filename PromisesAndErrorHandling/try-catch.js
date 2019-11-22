@@ -3,9 +3,9 @@
 //================================================================================
 
 try {
-    let example = something
+    throw new Error("errorrrrrrrrr");
 } catch (error) {
-    console.log(`Our example error: ${error}`); //Our example error: ReferenceError: something is not defined 
+    console.log(error); //Output: [Error: errorrrrrrrrr]  
 }
 
 console.log("Hello World!"); //Output: Hello World!
