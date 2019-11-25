@@ -1,4 +1,6 @@
 const Car = require('./car.js');
+//if this was using a transpiler, the syntax would look like the following:
+// import { Car } from "./car"
 
 let car = new Car();
 
