@@ -19,7 +19,7 @@ var heightChecker = function(heights) {
 };
 
 function sort(arr) {
-  return arr.concat().sort((a,b) => a-b);
+  return arr.sort((a,b) => a-b);
 }
 
 console.log(heightChecker(heights));
