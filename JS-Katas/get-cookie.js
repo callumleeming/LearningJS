@@ -1,4 +1,4 @@
-function getCookieValueByName(cookieName) {
+function getCookie(cookieName) {
     var splitCookies = window.document.cookie.split("; ");
     var cookies = {};
 
