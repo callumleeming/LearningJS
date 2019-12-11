@@ -24,3 +24,10 @@ var checkWord = function (word) {
 };
 
 console.log(findWords(input)); //Output ["Alaska", "Dad"]
+
+
+var subtract = function(a, b) {
+    return a-b;
+}
+
+console.log(subtract(1283, 1153));
