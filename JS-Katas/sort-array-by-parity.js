@@ -15,6 +15,4 @@ var sortArrayByParityII = function (A) {
     return result;
 };
 
-sortArrayByParityII([4, 2, 5, 7]);
-
-//link: https://leetcode.com/problems/sort-array-by-parity-ii/
+sortArrayByParityII([4, 2, 5, 7]); //Output: [ 4, 5, 2, 7 ]
