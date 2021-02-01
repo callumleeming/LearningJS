@@ -1,5 +1,3 @@
-//A function to convert a number less than 100 to words.
-
 function convertToWords(number) {
     let numbers = number.split("");
     let length = numbers.length;
